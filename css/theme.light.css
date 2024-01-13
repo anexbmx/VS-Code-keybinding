@@ -1,0 +1,22 @@
+ :root {
+     --color-text-primary: rgb(0 0 0 / 87%);
+     --color-text-secondary: rgb(0 0 0 / 60%);
+     --color-text-hint: rgb(0 0 0 / 38%);
+     --color-text-disabled: rgb(0 0 0 / 38%);
+
+     --color-primary: #6200EE;
+     --color-on-primary: rgb(255 255 255 / 87%);
+
+     --color-background: #F5F6FB;
+     --color-on-background: var(--color-text-primary);
+
+     --color-background-inverse:#111111;
+
+     --color-surface: #FFFFFF;
+     --color-on-surface: var(--color-text-primary);
+
+     --color-surface-var: #F9F9F9;
+     --color-on-surface-var: var(--color-text-primary);
+
+     --box-shadow: 0px 32px 43px 0px rgba(40, 35, 74, 0.10);
+ }

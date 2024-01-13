@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>VS Code Cheatsheet</title>
+
+		<link
+			rel="stylesheet"
+			href="/css/theme.dark.css"
+			media="(prefers-color-scheme: dark)"
+		/>
+		<link
+			rel="stylesheet"
+			href="/css/theme.light.css"
+			media="(prefers-color-scheme: light)"
+		/>
+		<link
+			rel="stylesheet"
+			href="/css/typography.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/css/styles.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Flow+Block&family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="/js/ShortcutCard.js"
+			defer
+		></script>
+		<script
+			src="/js/KeySymbol.js"
+			defer
+		></script>
+		<script
+			src="/js/index.js"
+			defer
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<img
+				class="header__logo"
+				src="/assets/vscode.svg"
+				height="54"
+				width="54"
+				alt=""
+			/>
+			<h1 class="display-medium header__title">Keybindings</h1>
+		</header>
+		<div class="container">
+            <main class="main"></main>
+        </div>
+		<footer class="footer body-medium">
+			<span>Created by </span>
+			<address>
+				<a
+					class="author__link label-large"
+					title="Created By Anas Boumediene"
+					href="#"
+					>Anas Boumediene</a
+				>
+			</address>
+		</footer>
+		<!-- Shortcut Template -->
+		<template id="templ">
+			<style>
+				.shortcut {
+					padding: 16px;
+					background-color: var(--color-surface);
+					border-radius: 12px;
+					box-shadow: var(--box-shadow);
+                    break-inside: avoid;
+                    margin-bottom: 16px;
+				}
+
+				.shortcut__title {
+					margin-bottom: 12px;
+					text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 16px;
+				}
+
+				.shortcut__list {
+					padding: 0;
+					list-style: none;
+				}
+
+				.shortcut__item {
+					background-color: var(--color-surface-var);
+					padding: 12px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin-bottom: 8px;
+					border-radius: 8px;
+                    gap: 48px;
+				}
+
+				.shortcut__keys {
+					color: var(--color-primary);
+                    white-space: nowrap;
+				}
+			</style>
+			<section class="shortcut">
+				<h2 class="shortcut__title">Essentials</h2>
+				<ul class="shortcut__list"></ul>
+			</section>
+		</template>
+	</body>
+</html>

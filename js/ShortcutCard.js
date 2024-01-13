@@ -26,7 +26,7 @@ class ShortcutCard extends HTMLElement {
 		const template = document.getElementById('templ');
 		this.content = template.content.cloneNode(true);
 
-		this.title = this.getAttribute('title');
+		this.title = this.getAttribute('name');
 
         for(let item of this.keybindings)
             this.keybinding = item;

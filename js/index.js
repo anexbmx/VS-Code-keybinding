@@ -86,6 +86,7 @@ const shortcuts = {
 			{command: 'Move Selection Up',keybinding: '⇧ + ↑',},
 			{command: 'Move Selection Down',keybinding: '⇧ + ↓',},
 
+
 		],
 	},
     multiCursor: {
@@ -96,7 +97,7 @@ const shortcuts = {
 			{command: 'Next Occurence',keybinding: '⌘ + D',},
 			{command: 'Skip Occurence',keybinding: '⌘ + K ⌘ + D',},
 			{command: 'Undo Selection',keybinding: '⌘ + ⌫',},
-			{command: 'Add Cursor To End',keybinding: '⌘ + →',},
+			{command: 'Add Cursors To Ends',keybinding: '⌘ + →',},
 			{command: 'Add Cursor Above',keybinding: '⌘ + ⌥ + ↑',},
 			{command: 'Add Cursor Below',keybinding: '⌘ + ⌥ + ↓',},
 
@@ -141,6 +142,7 @@ const shortcuts = {
 			{command: 'Start Live Server',keybinding: '⌘ + G ⌘ + L',},
 			{command: 'Stop Live Server',keybinding: '⌘ + G ⌘ + O',},
 			{command: 'Expand',keybinding: '⌘ + ⇧ + ]',},
+			{command: 'Toggle DevChrome',keybinding: '⌘ + ⌥ + I',},
 		],
 	},
 };
@@ -151,7 +153,7 @@ document.querySelector('.main').insertAdjacentHTML(
 	Object.keys(shortcuts)
 		.map(
 			(k) =>
-				`<shortcut-card title='${
+				`<shortcut-card name='${
 					shortcuts[k].title
 				}' keybindings='${JSON.stringify(
 					shortcuts[k].keybindings

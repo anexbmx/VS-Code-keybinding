@@ -27,6 +27,15 @@ const shortcuts = {
 			{command: 'Contract Pane', keybinding: '⌃ + -',},
 		],
 	},
+	terminal: {
+		title: 'Terminal',
+		keybindings: [
+			{command: 'New Terminal',keybinding: '⌃ + N',},
+			{command: 'Focus Next Pane', keybinding: '⌃ + L',},
+			{command: 'Focus Prev Pane', keybinding: '⌃ + H',},
+			{command: 'Kill Terminal', keybinding: '⌃ + w',},
+		],
+	},
 	window: {
 		title: 'Window',
 		keybindings: [
@@ -35,7 +44,7 @@ const shortcuts = {
 			{command: 'Close Window', keybinding: '⌘ + ⇧ + W',},
 			{command: 'Quit VS Code', keybinding: '⌘ + Q',},
 			{command: 'Focus Prev Tab', keybinding: '⌘ + ⌥ + ←',},
-			{command: 'Foccus Next Tab', keybinding: '⌘ + ⌥ + →',},
+			{command: 'Focus Next Tab', keybinding: '⌘ + ⌥ + →',},
 		],
 	},
 	Panels: {
@@ -71,7 +80,7 @@ const shortcuts = {
     lineManipulation: {
 		title: 'Line Manipulation',
 		keybindings: [
-			{command: 'Duplicate Line',keybinding: '⌘ + L',},
+			{command: 'Select Line',keybinding: '⌘ + L',},
 			{command: 'Join Lines',keybinding: '⌘ + J',},
 			{command: 'Delete Line',keybinding: '⌘ + ⇧ + K',},
 			{command: 'Move Selection Up',keybinding: '⇧ + ↑',},
@@ -150,4 +159,3 @@ document.querySelector('.main').insertAdjacentHTML(
 		)
 		.join('')
 );
-const x = 5;

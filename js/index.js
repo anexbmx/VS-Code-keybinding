@@ -41,6 +41,7 @@ const shortcuts = {
 		keybindings: [
 			{command: 'Close File',keybinding: '⌘ + W',},
 			{command: 'Close All Files',keybinding: '⌘ + K + W',},
+			{command: 'Close Others',keybinding: '⌥ + ⌘ + T',},
 			{command: 'Close Window', keybinding: '⌘ + ⇧ + W',},
 			{command: 'Quit VS Code', keybinding: '⌘ + Q',},
 			{command: 'Focus Prev Tab', keybinding: '⌘ + ⌥ + ←',},
